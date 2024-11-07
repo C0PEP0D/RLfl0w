@@ -1,0 +1,15 @@
+input,VelGrad
+input_dim,6
+number_of_Hidden_Layers_Actor,2
+size_of_Hidden_Layers_Actor,100
+Gamma,0.95
+lr_critic,1e-04
+lr_actor,1e-06
+Episode_Length,200
+Delta_t,0.1
+Env_Steps,5
+Number_of_Episodes,850000
+V_Swim,1.5
+Target_dir_x,0.0
+Target_dir_y,0.0
+Target_dir_z,1.0

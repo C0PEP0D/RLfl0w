@@ -1,0 +1,14 @@
+input,Gradients
+input_dim,3
+number_of_Hidden_Layers_Actor,2
+size_of_Hidden_Layers_Actor,100
+Gamma,0.99
+lr_critic_now,1e-04
+lr_actor_now,1e-06
+Episode_Length,50
+Delta_t,0.01
+Env_Steps,10
+Number_of_Episodes,650000
+V_Swim,2.0
+Target_dir,"[0.0, 1.0]"
+Learning_Algorithm_Name,A2C

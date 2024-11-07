@@ -1,0 +1,24 @@
+input,Gradients
+input_dim,2
+number_of_Hidden_Layers_Actor,2
+size_of_Hidden_Layers_Actor,100
+Gamma,0.99
+lr_critic,0.001
+lr_actor,0.0001
+lr_critic_now,0.000750025
+lr_actor_now,7.50025e-05
+Episode_Length,40
+Delta_t,0.01
+Env_Steps,100
+Number_of_Episodes,250000
+V_Swim,0.25
+Target_dir,"[0.0, 1.0]"
+Number_of_Environments,100
+Number_of_Steps_per_Env_per_Update,10
+Number_of_Epochs_per_Update,4
+Number_of_Minibatches_per_Update,5
+PPO_Clip_Coef,0.1
+PPO_Entropy_Coef,0.0
+PPO_GAE_Lambda,1.0
+Learning_Algorithm_Name,PPO
+Using_One_Optimizer,False
