@@ -148,8 +148,8 @@ For 3D plots we use `mayavi` which may induce some rendering errors, uninstallin
 Using this script you can generate plots such as these:
 
 <div align="center">
-<img src="docs/figs/Trajectories_TGV.png" width="40%"/>
-<img src="docs/figs/Traj_ABC.png" width="20%"/>
+<img src="docs/figs/Trajectories_TGV.png" width="60%"/>
+<img src="docs/figs/Traj_ABC.png" width="30%"/>
 
 *Example of trajectories in **TGV (left)**, and **ABC (right)** for naive and learned policies*.
  </div>
