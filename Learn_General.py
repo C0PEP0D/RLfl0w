@@ -29,9 +29,9 @@ def parse_args():
     parser.add_argument("--relgrad", action="store_true", help="Agent has access to the relative local velocity gradients of the flow")
     parser.add_argument("--projgrad", action="store_true", help="Agent has access to the projected local velocity gradients of the flow")
     parser.add_argument("--tau", action="store_true", help="Learn the tau parameter of the surf")
-    parser.add_argument("--time_step", type=float, help="The environment time step")
-    parser.add_argument("--N_steps", type=int, help="The environment number of action steps")
-    parser.add_argument("--env_steps", type=int, required=True, help="The environment steps executed per action")
+    parser.add_argument("--time_step", type=float, default=0.01, help="The environment time step")
+    parser.add_argument("--N_steps", type=int, default=40, help="The environment number of action steps")
+    parser.add_argument("--env_steps", type=int, required=True, default=100, help="The environment steps executed per action")
 
     # Algorithm specific arguments:
     parser.add_argument("--A2C", action="store_true", help="Use A2C as learning algorithm")
