@@ -47,21 +47,21 @@ missing dependencies will be installed automatically.
 Start by cloning this repository with its submodules.
 
 ```sh
-$ git clone https://github.com/SelimMecanna/RL_Navigation.git
+git clone https://github.com/SelimMecanna/RL_Navigation.git
 ```
 Create the virtual environment.
 This code use an older version of setuptools and wheel so that it is compatible with gym==0.21 [see](https://github.com/openai/gym/issues/3176).
 
 ```sh
-$ virtualenv -p python3.8 venv --no-setuptools --no-wheel
-$ source venv/bin/activate
-$ pip install setuptools==60.2.0 wheel==0.37.1
+virtualenv -p python3.8 venv --no-setuptools --no-wheel
+source venv/bin/activate
+pip install setuptools==60.2.0 wheel==0.37.1
 ```
 
 You then install the dependencies listed in [requirements.txt](https://github.com/SelimMecanna/RL_Navigation/blob/master/requirements.txt)
 
 ```sh
-$ pip install -r requirements.txt --force-reinstall
+pip install -r requirements.txt --force-reinstall
 ```
 
 In order to use the 2D turbulence simulation one can download the [flow](https://www.dropbox.com/scl/fo/6re9ydtqrzd540d2xaveu/AKMMP2uxXNe5ydokytc8728?rlkey=ctj9tsdbutblo7gk6wx8cge4c&st=dud63ril&dl=0) folder and include it in the project root directory **./RL_Navigation**.
@@ -107,7 +107,7 @@ In order to run a learning simulation one has to specify the learning parameters
 in terminal command. An example may look like this:
 
 ```sh
-$ python3.8 Learn_General.py --turb --uswim 2.0 --dir 0 1.0 --grad --time_step 0.01 --pedley 0.125 --N_steps 500 --env_steps 1 --lr_actor 1e-4 --lr_critic 1e-3 --gamma 0.999 --num_episodes 1000000 --PPO --num_envs 1000 --anneal_lr --file_name Pedley_PPO_0.125 --scaler_states 10 --steps_per_update 100 --target_kl 0.02 --lr_curve True --save_frequency 100
+python3.8 Learn_General.py --turb --uswim 2.0 --dir 0 1.0 --grad --time_step 0.01 --pedley 0.125 --N_steps 500 --env_steps 1 --lr_actor 1e-4 --lr_critic 1e-3 --gamma 0.999 --num_episodes 1000000 --PPO --num_envs 1000 --anneal_lr --file_name Pedley_PPO_0.125 --scaler_states 10 --steps_per_update 100 --target_kl 0.02 --lr_curve True --save_frequency 100
 ```
 
 You can find the list of all the possible arguments at the top of the `Learn_General.py` file with a brief explanation for each argument.
@@ -125,7 +125,7 @@ The essential parameters that need to be defined for each train run are:
 In order to evaluate a trained policy, you can simply run the following command:
 
 ```sh
-$ python3.8 Evaluate_model.py --file-name <trained-model-folder>
+python3.8 Evaluate_model.py --file-name <trained-model-folder>
 ```
 The script will automatically detect all the training parameters of the given model and evaluate its policy accordingly.
 
@@ -138,7 +138,7 @@ At the end of the evaluation, the returns of all the episodes are saved in the t
 ### Visualizing a learned policy
 In order to visualize a learned policy, you can use the `Visualize_Example.py` filein the same way as for evaluation:
 ```sh
-$ python3.8 Visualize_Example.py --file-name <trained-model-folder>
+python3.8 Visualize_Example.py --file-name <trained-model-folder>
 ```
 You can choose any of the functions that are listed in `Scripts/Plotting.py`, which are specific for each environment.
 The `Visualize_Example.py` should be slightly modified for each training runs in order to show different plots. One just has to take of the function signatures
