@@ -1,5 +1,5 @@
-# RL Navigation
-[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/SelimMecanna/RL_Navigation/blob/master/LICENSE)
+# RLfl0w
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/SelimMecanna/RLfl0w/blob/master/LICENSE)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
 This is a code that simulate the trajectories of active particles in complex flows,
@@ -26,7 +26,7 @@ This software has been produced during my PhD thesis and as part as the European
 * [Installation](#installation)
     * [Requirements](#requirements)
     * [Installing](#installing)
-* [How to use RL_Navigation?](#how-to-use-rl_navigation)
+* [How to use RLfl0w?](#how-to-use-RLfl0w)
     * [First steps](#first-steps)
     * [Changing parameters for learning](#changing-parameters-for-learning)
     * [Evaluating a policy](#evaluating-a-policy)
@@ -39,7 +39,7 @@ This software has been produced during my PhD thesis and as part as the European
 ## Installation
 ### Requirements
 RL-Navigation requires Python 3.8.
-Dependencies are listed in [requirements.txt](https://github.com/SelimMecanna/RL_Navigation/blob/master/requirements.txt),
+Dependencies are listed in [requirements.txt](https://github.com/SelimMecanna/RLfl0w/blob/master/requirements.txt),
 missing dependencies will be installed automatically.
 
 ### Installing
@@ -47,7 +47,7 @@ missing dependencies will be installed automatically.
 Start by cloning this repository with its submodules.
 
 ```sh
-git clone https://github.com/SelimMecanna/RL_Navigation.git
+git clone https://github.com/SelimMecanna/RLfl0w.git
 ```
 Create the virtual environment.
 This code use an older version of setuptools and wheel so that it is compatible with gym==0.21 [see](https://github.com/openai/gym/issues/3176).
@@ -58,15 +58,15 @@ source venv/bin/activate
 pip install setuptools==60.2.0 wheel==0.37.1
 ```
 
-You then install the dependencies listed in [requirements.txt](https://github.com/SelimMecanna/RL_Navigation/blob/master/requirements.txt)
+You then install the dependencies listed in [requirements.txt](https://github.com/SelimMecanna/RLfl0w/blob/master/requirements.txt)
 
 ```sh
 pip install -r requirements.txt --force-reinstall
 ```
 
-In order to use the 2D turbulence simulation one can download the [flow](https://www.dropbox.com/scl/fo/6re9ydtqrzd540d2xaveu/AKMMP2uxXNe5ydokytc8728?rlkey=ctj9tsdbutblo7gk6wx8cge4c&st=dud63ril&dl=0) folder and include it in the project root directory **./RL_Navigation**.
+In order to use the 2D turbulence simulation one can download the [flow](https://www.dropbox.com/scl/fo/6re9ydtqrzd540d2xaveu/AKMMP2uxXNe5ydokytc8728?rlkey=ctj9tsdbutblo7gk6wx8cge4c&st=dud63ril&dl=0) folder and include it in the project root directory **./RLfl0w**.
 
-## How to use RL_Navigation?
+## How to use RLfl0w?
 ### First steps
 
 in the `RL-Navigation` subdirectory you will notice that it includes three main `.py` files which correspond to the main uses of the code:
@@ -167,7 +167,7 @@ Selim Mecanna - [@SelimMecanna](https://github.com/SelimMecanna) - mecannaselim@
 
 ## Contributing
 
-Feel free to dive in! [Open an issue](https://github.com/SelimMecanna/RL_Navigation/issues/new) or submit PRs.
+Feel free to dive in! [Open an issue](https://github.com/SelimMecanna/RLfl0w/issues/new) or submit PRs.
 Or just propose features you would like to have implemented in the code.
 
 ## License
