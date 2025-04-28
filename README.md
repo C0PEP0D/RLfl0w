@@ -39,7 +39,7 @@ This software has been produced during my PhD thesis and as part as the European
 ## Installation
 ### Requirements
 RL-Navigation requires Python 3.8.
-Dependencies are listed in [requirements.txt](https://github.com/SelimMecanna/RLfl0w/blob/master/requirements.txt),
+Dependencies are listed in [requirements.txt](https://github.com/C0PEP0D/RLfl0w/blob/master/requirements.txt),
 missing dependencies will be installed automatically.
 
 ### Installing
@@ -58,7 +58,7 @@ source venv/bin/activate
 pip install setuptools==60.2.0 wheel==0.37.1
 ```
 
-You then install the dependencies listed in [requirements.txt](https://github.com/SelimMecanna/RLfl0w/blob/master/requirements.txt)
+You then install the dependencies listed in [requirements.txt](https://github.com/C0PEP0D/RLfl0w/blob/master/requirements.txt)
 
 ```sh
 pip install -r requirements.txt --force-reinstall
@@ -167,7 +167,7 @@ Selim Mecanna - [@SelimMecanna](https://github.com/SelimMecanna) - mecannaselim@
 
 ## Contributing
 
-Feel free to dive in! [Open an issue](https://github.com/SelimMecanna/RLfl0w/issues/new) or submit PRs.
+Feel free to dive in! [Open an issue](https://github.com/C0PEP0D/RLfl0w/issues/new) or submit PRs.
 Or just propose features you would like to have implemented in the code.
 
 ## License
